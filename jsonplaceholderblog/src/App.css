@@ -1,0 +1,23 @@
+/*---------------------------------------
+    General               
+-----------------------------------------*/
+#trainer,
+#blog,
+#price {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+#home,
+#trainer,
+#newsletter,
+#price,
+#testimonial,
+#blog-header {
+  text-align: center;
+}
+
+.parallax-section {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}

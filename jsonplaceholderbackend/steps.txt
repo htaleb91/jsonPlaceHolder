@@ -1,0 +1,56 @@
+1- cd project-folder-name
+
+2-      npm init (and answer questions)  
+    ||  npm init -y (default values package.json file)
+
+3- install the express lib
+    npm install express
+
+4- create file server.js || index.js 
+
+5-  to use any lib from node_modules you to pass the lib name to the function require("express")
+     so in server.js we need to call express 
+     const express = require("express")
+
+6-  to build the app or server
+    const app =  express();
+
+7- define the endpoints using 
+    app.get ("uri", (request, response)=>{ do something and call response.send(params)) })
+
+8- starting the app by making it listen to requests using
+    app.listen(port, ()=>{ callback fuction to run when start the listen
+        console.log("Starting Server ... the server is listenong on port : 3001");
+    });
+
+9- in order to allow expess to use body params you need to add after 6
+    app.use(express.json());
+
+10- the response.send("for strings or HTML any html tags can be recognized by browser ")
+    the response.json({key : value})
+    the response.sendFile(__dirname + "/views/test.html") __dirname a ready variable for project directory
+                                                             and you add the html file path in your project
+    
+    the response.render("filename", {key:value}) suppose by default you have a views folder and he 
+                                                    looks to the file name in that folder
+    now you can use the object in the .ejs file using the syntax <%= key %>
+
+
+11- template engines are used to allow write js inside the html file an example is ejs
+    the ejs lib can be installed using  npm install ejs
+    then change the html file extenstion into .ejs
+
+12 - we install mongoose to connect with db and in server.js we dfine an instance of mongoose and connect to db
+        using the connection string as below:
+        const mongoose = require("mongoose");
+        mongoose.connect("mongodb+srv://<username>:<password>@cluster0.cu8sb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+            .then(()=>{
+            console.log("connected to db suucessfully")
+            }).catch((e)=>{
+            console.log("error in connection to db",e)
+            }) 
+            the connect function return a promise so if success it runs then() otherwise it runs catch()
+
+
+13-  add models folder to hold the entities or schemas
+        in the entity file we get n entity of mongoose

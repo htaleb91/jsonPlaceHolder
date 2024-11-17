@@ -1,0 +1,51 @@
+/*---------------------------------------
+   Newsletter section              
+-----------------------------------------*/
+#newsletter {
+    background: url('../images/newsletter-bg.jpg') 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+}
+
+#newsletter .newsletter_detail {
+    padding-top: 3rem;
+}
+
+#newsletter .form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    border-radius: 0px;
+    box-shadow: none;
+    font-size: 20px;
+    margin-bottom: 16px;
+    transition: all 0.4s ease-in-out;
+}
+
+#newsletter .form-control:focus {
+    border-bottom-color: #ffffff;
+}
+
+#newsletter input {
+    height: 45px;
+}
+
+#newsletter input[type="submit"] {
+    background: #26253a;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    height: 65px;
+    margin-top: 42px;
+    transition: all 0.4s ease-in-out;
+}
+
+#newsletter input[type="submit"]:hover {
+    background: #ffffff;
+    color: #26253a;
+}

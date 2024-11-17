@@ -1,0 +1,18 @@
+/*---------------------------------------
+    Testimonial section              
+-----------------------------------------*/
+#testimonial {
+    background: #ffffff;
+    color: #26253a;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+#testimonial .fa {
+    font-size: 42px;
+    padding-bottom: 14px;
+}
+
+#testimonial h3 {
+    letter-spacing: 1px;
+}

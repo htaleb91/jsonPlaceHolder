@@ -1,0 +1,36 @@
+/*---------------------------------------
+   Footer section              
+-----------------------------------------*/
+footer {
+    background: #26253a;
+    color: #ffffff;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+footer .col-md-5 {
+    position: relative;
+    left: 100px;
+}
+
+footer .col-md-5 div {
+    padding-top: 10px;
+}
+
+footer h4 {
+    margin-top: 0px;
+}
+
+footer .copyright-text {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.copyright-text a {
+    color: #707070;
+    transition: all 0.4s ease-in-out;
+}
+
+.copyright-text a:hover {
+    color: #ffffff;
+}
