@@ -2,6 +2,7 @@
 
 # dependencies
 /jsonplaceholderbackend/node_modules
+/jsonplaceholderbackend/steps.txt
 /jsonplaceholderblog/node_modules
 /.pnp
 .pnp.js
